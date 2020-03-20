@@ -1,0 +1,48 @@
+{
+  "name": "@godaddy/webpack-rtlcss-plugin",
+  "version": "1.0.0",
+  "description": "Webpack Plugin to operate Right-to-Left operations over .css",
+  "main": "index.js",
+  "scripts": {
+    "report": "nyc report --reporter=lcov",
+    "test": "webpack --config test/unit/webpack.config.js && nyc --reporter=text --reporter=json-summary mocha ./test/unit/index.test.js && npm run lint",
+    "lint": "npm run lint:code",
+    "lint:code": "eslint-godaddy index.js"
+  },
+  "keywords": [
+    "css",
+    "rtl",
+    "webpack"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:godaddy/webpack-rtlcss-plugin.git"
+  },
+  "homepage": "https://github.com/godaddy/webpack-rtlcss-plugin",
+  "bugs": "https://github.com/godaddy/webpack-rtlcss-plugin/issues",
+  "author": "GoDaddy Operating Company, LLC",
+  "license": "MIT",
+  "maintainers": [
+    "Chris Abrams <cabrams@godaddy.com>"
+  ],
+  "dependencies": {
+    "rtlcss": "^2.4.1",
+    "webpack-sources": "^1.4.3"
+  },
+  "engines": {
+    "node": ">= 10.x.x"
+  },
+  "devDependencies": {
+    "assume": "^2.2.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.6.0",
+    "eslint-config-godaddy": "^4.0.0",
+    "eslint-plugin-json": "^1.4.0",
+    "eslint-plugin-mocha": "^5.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
