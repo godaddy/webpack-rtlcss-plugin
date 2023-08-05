@@ -26,7 +26,7 @@
     "Chris Abrams <cabrams@godaddy.com>"
   ],
   "dependencies": {
-    "rtlcss": "^2.4.1",
+    "rtlcss": "^3.0.0",
     "webpack-sources": "^1.4.3"
   },
   "engines": {
